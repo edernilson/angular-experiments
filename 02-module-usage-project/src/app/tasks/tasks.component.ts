@@ -7,10 +7,9 @@ import { NewTaskComponent } from "./new-task/new-task.component";
 
 @Component({
   selector: "app-tasks",
-  standalone: true,
+  standalone: false,
   templateUrl: "./tasks.component.html",
   styleUrl: "./tasks.component.css",
-  imports: [TaskComponent, NewTaskComponent],
 })
 export class TasksComponent {
   @Input() user: any | undefined;
